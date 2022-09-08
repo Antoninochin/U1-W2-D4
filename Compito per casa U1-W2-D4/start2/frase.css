@@ -7,4 +7,43 @@
 6 animare le altre 2 parole
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
+body,
+html{
+    height: 100%;
+}
+.i-1{
+    color: darkviolet;
+    animation-name: i-1;
+    animation-duration: 5s;
+    animation-direction:reverse;
+}
+.i-2{
+    color: darkviolet;
+    position: relative;
+}
+.i-3{
+    color: darkviolet;
+    position: relative;
+}
 
+
+#container{
+    height: 100%;
+}
+#testoAlternato{
+    border: 1px solid;
+    padding: 30px;
+    margin: 25px;
+    font-size: 1.5em;  
+}
+
+@keyframes i-1{
+    25%{
+        bottom:-10px;}
+    50%{
+        left:50px;}
+    75%{
+        top:10px;}
+    100%{
+        right:50px;}
+}
